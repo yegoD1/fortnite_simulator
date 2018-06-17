@@ -1,0 +1,64 @@
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCi9pz3I4m0i_zve1keyy6w4GXrnkJ65yk",
+        authDomain: "escaperoomcontrol-45040.firebaseapp.com",
+        databaseURL: "https://escaperoomcontrol-45040.firebaseio.com",
+        projectId: "escaperoomcontrol-45040",
+        storageBucket: "escaperoomcontrol-45040.appspot.com",
+        messagingSenderId: "922772212367"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<style>
+    body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+    
+    #game {
+        height: 600;
+        width: 600;
+        background: url("room1.png");
+        border: 5px;
+        border-style: solid;
+        border-color: red;
+    }
+    
+    #countdown {
+        height: 50;
+        width: 200;
+        position: relative;
+        top: 45;
+        left: 320;
+        transform: translate(-50%, -50%);
+    }
+    
+    #ctext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30;
+        color: white;
+    }
+    
+    #escape {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+</style>
+
+<div id="game">
+    <div id="countdown">
+        <div id="ctext">5:00</div>
+    </div>
+
+    <div id="level"></div>
+</div>
+
+<script src="main.js"></script>
